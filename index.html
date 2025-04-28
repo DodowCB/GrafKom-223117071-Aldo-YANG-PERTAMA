@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kubus Tekstur WebGL</title>
+    <style>
+        body { 
+            margin: 0; 
+            overflow: hidden; 
+            background-color: #333333;
+            font-family: Arial, sans-serif;
+        }
+        canvas { 
+            display: block; 
+        }
+        .info {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            color: white;
+            background-color: rgba(0,0,0,0.5);
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 14px;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="webgl-canvas"></canvas>
+    <div class="info">Rotasi: Klik dan geser | Zoom: Scroll</div>
+    
+    <!-- WebGL Matrix Math Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gl-matrix/2.8.1/gl-matrix-min.js"></script>
+    
+    <!-- Main Script -->
+    <script src="main.js"></script>
+</body>
+</html>
